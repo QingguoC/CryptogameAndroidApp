@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gatech.seclass.sdpcryptogram.ViewChosenCrypto">
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5" />
+    <TextView
+        android:id="@+id/chosenCryptoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="10">
+
+        <GridLayout
+            android:id="@+id/viewTrialsGLO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:columnCount="3">
+
+        </GridLayout>
+    </ScrollView>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5" />
+    <Button
+        android:id="@+id/replayTrial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Replay the trial"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.5"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5" />
+
+</LinearLayout>
